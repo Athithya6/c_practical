@@ -1,19 +1,23 @@
-/******************************************************************************
+/*
+ ============================================================================
+ Name        : merge_list.c
+ Author      : ranjith
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 static int l1,l2;
 struct node
 {
-    int data;
-    struct node* next;
+	int data;
+	struct node* next;
 };
+
+
 void insert(struct node** head,int newdata)
 {
     struct node* newnode=(struct node*)malloc(sizeof(struct node*));
@@ -45,7 +49,7 @@ void len(struct node* head1,struct node* head2)
         l2++;
         head2=head2->next;
     }
-    
+
 }
 
 struct node* traverse(struct node* head,int t)
@@ -57,29 +61,38 @@ struct node* traverse(struct node* head,int t)
     return head;
 }
 
-struct node* merge(struct node* head1,struct node* head2)
+void merge(struct node* head1,struct node* head2)
 {
     struct node* temp=head1;
-    while(temp->next!=NULL)
+    if(temp->next==NULL)
     {
-        temp=temp->next;
+    	temp->next=head2->next;
+    	printf("address  of pointer at the merging point:%p",temp);
+    	printf("\nmerging point:%d\n",head2->data);
+    	return;
+
     }
-    temp->next=head2->next;
-    printf("address  of pointer at the merging poiunt:%p",temp);
-    printf("\nmering point:%d\n",head2->data);
-    return head1;
+    else
+    {
+    	temp=temp->next;
+    	merge(temp,head2);
+    }
+
 }
 
 void display(struct node* head)
 {
     struct node* temp=head;
-    while(temp!=NULL)
+    if(temp==NULL)
+    	return;
+    else
     {
         printf("%d",temp->data);
         temp=temp->next;
     }
+    display(temp);
 }
-int main()
+int main(void)
 {
     struct node* head1=NULL;
     struct node* head2=NULL;
@@ -93,8 +106,9 @@ int main()
     insert(&head2,5);
     insert(&head2,6);
     insert(&head2,7);
+    printf("List1:");
     display(head1);
-    printf("\n");
+    printf("\nList2:");
     display(head2);
     printf("\n");
     len(head1,head2);
@@ -107,3 +121,4 @@ int main()
     getchar();
     return 0;
 }
+
