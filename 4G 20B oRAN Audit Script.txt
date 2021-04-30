@@ -1,0 +1,68 @@
+request retrieve-package-inventory |display xml
+show managed-element ip-system ip-route ipv6-route ipv6-static-route | display xml
+show managed-element enb-function term-point-to-mme | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd operational-state | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd usage-state | display xml
+request retrieve-ntp-status | display xml
+request retrieve-ucr-inventory | display xml
+show managed-element hardware-management digital-unit clock-unit ucr | display xml
+request retrieve-processor-firmware-inventory | display xml
+request retrieve-radio-unit-inventory unit-type mmu | display xml
+request retrieve-radio-unit-inventory unit-type rrh | display xml
+request retrieve-ttlna-info | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-call-count-status | display xml:cell-num,cell-call-count-status
+request retrieve-cell-throughput | display xml
+show managed-element test-management monitor-test active-test-list | display xml:active-test-list
+request retrieve-sfp-inventory | display xml
+show managed-element hardware-management digital-unit digital-unit-entries external-port cpri-port cpri-port-entries | display xml
+show managed-element enb-function call-trace retrieve-trace | display xml:retrieve-trace
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit antenna-line-device antenna-line-device-info ret ret-info | display xml:radio-unit-info
+show managed-element enb-function term-point-to-mme | display xml
+show managed-element ip-system ip-interface external-interfaces ipv6-address | display xml:interface-name,ipv6-address
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cbrs-info | display xml
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit | display xml
+request retrieve-radio-unit-sfp-inventory unit-type rrh | display xml
+configure
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd administrative-state | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd dsp-id | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-conf-idle | display xml:cell-num,eutran-cell-conf-idle
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd scheduling-config physical-resource-config prach-config-logic | display xml:cell-num,prach-config-logic
+show managed-element hardware-management radio-unit radio-unit-info board-type | display xml
+show managed-element hardware-management radio-unit radio-unit-info first-sector-start-earfcn | display xml
+show managed-element hardware-management radio-unit radio-unit-info second-sector-start-earfcn | display xml
+show managed-element hardware-management radio-unit radio-unit-info cbrs | display xml
+show managed-element enb-function cbrs | display xml
+show managed-element hardware-management radio-unit radio-unit-info radio-unit-serial-number | display xml
+exit
+show managed-element hardware-management radio-unit radio-unit-info external-port cpri-port | display xml
+show managed-element hardware-management radio-unit radio-unit-info carrier-control-info | display xml
+configure
+show managed-element hardware-management radio-unit radio-unit-info vswr-fail-alarm-threshold | display xml
+show managed-element common-management time-sync-service ntp-info | display xml:time-sync-service
+show managed-element enb-function call-trace csl-info | display xml
+show managed-element common-management time-sync-service local-time-info | display xml
+show managed-element hardware-management digital-unit uda-port | display xml:rx-port
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-access cell-select-info-logic | display xml:cell-num,cell-select-info-logic
+exit
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit antenna-line-device antenna-line-device-info | display xml
+configure
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func earfcn-ul | display xml:cell-num,eutran-fa-information
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func earfcn-dl | display xml:cell-num,eutran-fa-information
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func priority | display xml:cell-num,eutran-fa-information
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-plmn-info | display xml:cell-num,cell-plmn-info
+show managed-element enb-function enb-information enb-plmn-info | display xml
+show managed-element enb-function carrier-aggregation ca-band-combination-info | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-carrier-aggregation ca-cell-info | display xml:cell-num,ca-cell-info
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-carrier-aggregation ca-colocated-cell | display xml:cell-num,ca-colocated-cell
+show managed-element enb-function son load-balancing active-mode-load-balancing-conf | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-info ims-emergency-support | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-son cell-load-balancing traffic-manage-func-cell-control | display xml:cell-num,traffic-manage-func-cell-control
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-info cell-dl-total-power | display xml:cell-num,eutran-cell-info
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd scheduling-config uplink-scheduling-config ul-power-control-param-logic | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd dsp-logical-cell-number | display xml
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd channel-card-id | display xml
+exit
+show managed-element hardware-management radio-unit radio-unit-info path-control | display xml
+configure
+show managed-element ip-system access-control-list acl-rule-config | display xml:access-control-list
+exit

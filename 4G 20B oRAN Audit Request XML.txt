@@ -1,0 +1,2149 @@
+request retrieve-package-inventory |display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-package-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+show managed-element ip-system ip-route ipv6-route ipv6-static-route | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:ip-system>
+          <mid:ip-route>
+            <mid:ipv6-route>
+              <mid:ipv6-static-route>
+                <mid:vr-id/>
+                <mid:prefix/>
+                <mid:gateway/>
+                <mid:interface-name/>
+                <mid:distance/>
+                <mid:bfd-switch/>
+                <mid:auto-config-type/>
+              </mid:ipv6-static-route>
+            </mid:ipv6-route>
+          </mid:ip-route>
+        </mid:ip-system>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function term-point-to-mme | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:term-point-to-mme>
+            <mid:mme-index/>
+            <mid:mme-usage/>
+            <mid:ip-ver/>
+            <mid:mme-ipv4/>
+            <mid:mme-ipv6/>
+            <mid:administrative-status/>
+            <mid:secondary-mme-ipv4/>
+            <mid:secondary-mme-ipv6/>
+            <mid:backup-mode/>
+            <mid:service-purpose/>
+            <mid:attach-without-pdn-connect/>
+            <mid:cp-opt-support/>
+            <mid:up-opt-support/>
+            <mid:n26-interface-available/>
+            <mid:mme-id/>
+            <mid:sctp-state/>
+            <mid:interface-state/>
+            <mid:mme-name/>
+            <mid:mme-match-state/>
+            <mid:mcc/>
+            <mid:mnc/>
+          </mid:term-point-to-mme>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd operational-state | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd usage-state | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+	
+request retrieve-ntp-status | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-ntp-status xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+request retrieve-ucr-inventory | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-ucr-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+show managed-element hardware-management digital-unit clock-unit ucr | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:digital-unit>
+            <mid:clock-unit>
+              <mid:ucr>
+                <mid:lock-state/>
+                <mid:holdover-state/>
+                <mid:location/>
+                <mid:tod/>
+                <mid:gps-position/>
+                <mid:time-figure-of-merit/>
+                <mid:current-antenna-delay/>
+                <mid:satellite-count/>
+                <mid:electronic-frequency-control/>
+                <mid:time-interval/>
+                <mid:frequency-figure-of-merit/>
+                <mid:identifiable-information/>
+                <mid:satellite-id/>
+              </mid:ucr>
+            </mid:clock-unit>
+          </mid:digital-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+request retrieve-processor-firmware-inventory | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-processor-firmware-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+request retrieve-radio-unit-inventory unit-type mmu | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-radio-unit-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+    <mid:unit-type>mmu</mid:unit-type>
+  </mid:retrieve-radio-unit-inventory>
+</nc:rpc>
+
+request retrieve-radio-unit-inventory unit-type rrh | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-radio-unit-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+    <mid:unit-type>rrh</mid:unit-type>
+  </mid:retrieve-radio-unit-inventory>
+</nc:rpc>
+
+request retrieve-ttlna-info | display xml
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-ttlna-info xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-call-count-status | display xml:cell-num,cell-call-count-status
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cell-call-count-status>
+                <mid:active-ue-count/>
+                <mid:emergency-access-ue-count/>
+                <mid:high-priority-access-ue-count/>
+                <mid:mobile-term-access-ue-count/>
+                <mid:mobile-origin-signal-access-ue-count/>
+                <mid:mobile-origin-data-access-ue-count/>
+                <mid:relocated-handover-ue-count/>
+                <mid:delay-tolerant-access-ue-count/>
+                <mid:scell-ue-count/>
+                <mid:mo-voice-call-ue-count/>
+                <mid:active-emtc-ue-count/>
+              </mid:cell-call-count-status>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+request retrieve-cell-throughput | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-cell-throughput xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+show managed-element test-management monitor-test active-test-list | display xml:active-test-list
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:test-management>
+          <mid:monitor-test>
+            <mid:active-test-list>
+              <mid:invocation-id/>
+              <mid:test-state/>
+              <mid:test-outcome/>
+              <mid:test-type/>
+              <mid:other-attributes/>
+            </mid:active-test-list>
+          </mid:monitor-test>
+        </mid:test-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+request retrieve-sfp-inventory | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-sfp-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist"/>
+</nc:rpc>
+
+show managed-element hardware-management digital-unit digital-unit-entries external-port cpri-port cpri-port-entries | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:digital-unit>
+            <mid:digital-unit-entries>
+              <mid:unit-type/>
+              <mid:unit-id/>
+              <mid:external-port>
+                <mid:cpri-port>
+                  <mid:cpri-port-entries>
+                    <mid:port-id/>
+                    <mid:administrative-state/>
+                    <mid:connected-radio-unit-type/>
+                    <mid:auto-speed-configuration/>
+                    <mid:cpri-speed-saved/>
+                    <mid:cpri-speed-running/>
+                    <mid:cpri-compression-saved/>
+                    <mid:cpri-compression-running/>
+                    <mid:cpri-connection-type/>
+                    <mid:bit-rate/>
+                    <mid:tx-wavelength/>
+                    <mid:tx-power/>
+                    <mid:rx-power/>
+                  </mid:cpri-port-entries>
+                </mid:cpri-port>
+              </mid:external-port>
+            </mid:digital-unit-entries>
+          </mid:digital-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function call-trace retrieve-trace | display xml:retrieve-trace
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:call-trace>
+            <mid:retrieve-trace>
+              <mid:trace-index/>
+              <mid:trace-type/>
+              <mid:trace-id/>
+              <mid:trace-reference/>
+              <mid:list-of-interfaces/>
+              <mid:trace-depth/>
+              <mid:target-cell/>
+              <mid:ip-ver/>
+              <mid:tce-address-ipv4/>
+              <mid:tce-address-ipv6/>
+              <mid:mdt-job-type/>
+              <mid:mdt-job-type-string/>
+              <mid:area-scope/>
+              <mid:mdt-mcc-tai1/>
+              <mid:mdt-mnc-tai1/>
+              <mid:mdt-tac-tai1/>
+              <mid:mdt-mcc-tai2/>
+              <mid:mdt-mnc-tai2/>
+              <mid:mdt-tac-tai2/>
+              <mid:mdt-mcc-tai3/>
+              <mid:mdt-mnc-tai3/>
+              <mid:mdt-tac-tai3/>
+              <mid:mdt-mcc-tai4/>
+              <mid:mdt-mnc-tai4/>
+              <mid:mdt-tac-tai4/>
+              <mid:mdt-mcc-tai5/>
+              <mid:mdt-mnc-tai5/>
+              <mid:mdt-tac-tai5/>
+              <mid:mdt-mcc-tai6/>
+              <mid:mdt-mnc-tai6/>
+              <mid:mdt-tac-tai6/>
+              <mid:mdt-mcc-tai7/>
+              <mid:mdt-mnc-tai7/>
+              <mid:mdt-tac-tai7/>
+              <mid:mdt-mcc-tai8/>
+              <mid:mdt-mnc-tai8/>
+              <mid:mdt-tac-tai8/>
+              <mid:mdt-mbsfn-area-id-area1/>
+              <mid:mdt-mbsfn-freq-area1/>
+              <mid:mdt-mbsfn-area-id-area2/>
+              <mid:mdt-mbsfn-freq-area2/>
+              <mid:mdt-mbsfn-area-id-area3/>
+              <mid:mdt-mbsfn-freq-area3/>
+              <mid:mdt-mbsfn-area-id-area4/>
+              <mid:mdt-mbsfn-freq-area4/>
+              <mid:mdt-mbsfn-area-id-area5/>
+              <mid:mdt-mbsfn-freq-area5/>
+              <mid:mdt-mbsfn-area-id-area6/>
+              <mid:mdt-mbsfn-freq-area6/>
+              <mid:mdt-mbsfn-area-id-area7/>
+              <mid:mdt-mbsfn-freq-area7/>
+              <mid:mdt-mbsfn-area-id-area8/>
+              <mid:mdt-mbsfn-freq-area8/>
+              <mid:m1-meas-status/>
+              <mid:m2-meas-status/>
+              <mid:reporting-trigger/>
+              <mid:report-interval/>
+              <mid:report-amount/>
+              <mid:trigger-quantity/>
+              <mid:a2-threshold-rsrp/>
+              <mid:a2-threshold-rsrq/>
+              <mid:logging-interval/>
+              <mid:logging-duration/>
+              <mid:anonymization-level/>
+              <mid:m3-meas-status/>
+              <mid:m4-meas-status/>
+              <mid:m4-collection-period/>
+              <mid:m4-links-to-log/>
+              <mid:m5-meas-status/>
+              <mid:m5-collection-period/>
+              <mid:m5-links-to-log/>
+              <mid:all-rrm-meas-status/>
+              <mid:m6-meas-status/>
+              <mid:ecid-positioning/>
+              <mid:gnss-positioning/>
+              <mid:target-mcc/>
+              <mid:target-mnc/>
+              <mid:trace-overload-control-flag/>
+              <mid:max-call-thresh-for-trace/>
+              <mid:mdt-report-filter-n/>
+              <mid:mcc/>
+              <mid:mnc/>
+            </mid:retrieve-trace>
+          </mid:call-trace>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit antenna-line-device antenna-line-device-info ret ret-info | display xml:radio-unit-info
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:antenna-unit>
+                <mid:antenna-line-device>
+                  <mid:antenna-line-device-info>
+                    <mid:antenna-line-device-id/>
+                    <mid:ret>
+                      <mid:ret-info>
+                        <mid:antenna-id/>
+                        <mid:user-label/>
+                        <mid:config-tilt/>
+                        <mid:current-tilt/>
+                        <mid:maximum-tilt/>
+                        <mid:minimum-tilt/>
+                        <mid:config-install-date/>
+                        <mid:current-install-date/>
+                        <mid:config-installer-id/>
+                        <mid:current-installer-id/>
+                        <mid:config-base-station-id/>
+                        <mid:current-base-station-id/>
+                        <mid:config-sector-id/>
+                        <mid:current-sector-id/>
+                        <mid:config-antenna-bearing/>
+                        <mid:current-antenna-bearing/>
+                        <mid:config-installed-tilt/>
+                        <mid:current-installed-tilt/>
+                        <mid:antenna-model-number/>
+                        <mid:antenna-serial-number/>
+                        <mid:antenna-operating-band/>
+                        <mid:beam-width/>
+                        <mid:gain/>
+                      </mid:ret-info>
+                    </mid:ret>
+                  </mid:antenna-line-device-info>
+                </mid:antenna-line-device>
+              </mid:antenna-unit>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function term-point-to-mme | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:term-point-to-mme>
+            <mid:mme-index/>
+            <mid:mme-usage/>
+            <mid:ip-ver/>
+            <mid:mme-ipv4/>
+            <mid:mme-ipv6/>
+            <mid:administrative-status/>
+            <mid:secondary-mme-ipv4/>
+            <mid:secondary-mme-ipv6/>
+            <mid:backup-mode/>
+            <mid:service-purpose/>
+            <mid:attach-without-pdn-connect/>
+            <mid:cp-opt-support/>
+            <mid:up-opt-support/>
+            <mid:n26-interface-available/>
+            <mid:mme-id/>
+            <mid:sctp-state/>
+            <mid:interface-state/>
+            <mid:mme-name/>
+            <mid:mme-match-state/>
+            <mid:mcc/>
+            <mid:mnc/>
+          </mid:term-point-to-mme>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element ip-system ip-interface external-interfaces ipv6-address | display xml:interface-name,ipv6-address
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:ip-system>
+          <mid:ip-interface>
+            <mid:external-interfaces>
+              <mid:interface-name/>
+              <mid:ipv6-address>
+                <mid:ip/>
+                <mid:prefix-length/>
+                <mid:ip-get-type/>
+                <mid:ip-oper/>
+                <mid:prefix-length-oper/>
+                <mid:address-state/>
+                <mid:management/>
+                <mid:signal-s1/>
+                <mid:signal-x2/>
+                <mid:bearer-s1/>
+                <mid:bearer-x2/>
+                <mid:bearer-m1/>
+                <mid:signal-m2/>
+                <mid:ieee1588/>
+                <mid:smart-scheduler/>
+              </mid:ipv6-address>
+            </mid:external-interfaces>
+          </mid:ip-interface>
+        </mid:ip-system>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cbrs-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cbrs-info>
+                <mid:cbsd-id/>
+                <mid:grant-id/>
+                <mid:cbsd-state/>
+                <mid:grant-state/>
+                <mid:transmit-expire-time/>
+                <mid:grant-expire-time/>
+                <mid:heartbeat-interval/>
+                <mid:frequency-select-rssi-threshold/>
+                <mid:max-eirp-threshold/>
+              </mid:cbrs-info>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:antenna-unit>
+                <mid:cross-polarization-antenna/>
+                <mid:antenna-gain/>
+                <mid:cable-loss/>
+                <mid:accuracy-margin/>
+                <mid:adjustment-lte/>
+              </mid:antenna-unit>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+request retrieve-radio-unit-sfp-inventory unit-type rrh | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mid:retrieve-radio-unit-sfp-inventory xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+    <mid:unit-type>rrh</mid:unit-type>
+  </mid:retrieve-radio-unit-sfp-inventory>
+</nc:rpc>
+
+***configure
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd administrative-state | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd dsp-id | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-conf-idle | display xml:cell-num,eutran-cell-conf-idle
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-cell-conf-idle>
+                <mid:cell-identity/>
+                <mid:physical-cell-id/>
+                <mid:cell-type/>
+                <mid:duplex-type/>
+                <mid:dl-antenna-count/>
+                <mid:ul-antenna-count/>
+                <mid:earfcn-dl/>
+                <mid:earfcn-ul/>
+                <mid:dl-bandwidth/>
+                <mid:ul-bandwidth/>
+                <mid:frequency-band-indicator/>
+                <mid:group-id/>
+                <mid:subframe-assignment/>
+                <mid:special-subframe-patterns/>
+                <mid:dl-crs-port-count/>
+                <mid:pci-alloc-status/>
+                <mid:emtc-switch/>
+                <mid:emtc-volte-usage/>
+                <mid:sdl-support/>
+              </mid:eutran-cell-conf-idle>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd scheduling-config physical-resource-config prach-config-logic | display xml:cell-num,prach-config-logic
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:scheduling-config>
+                <mid:physical-resource-config>
+                  <mid:prach-config-logic>
+                    <mid:high-speed-flag/>
+                    <mid:zero-correlation-zone-config/>
+                    <mid:prach-config-index/>
+                    <mid:root-sequence-index/>
+                    <mid:dedicated-preamble-timer/>
+                    <mid:prach-position/>
+                    <mid:prach-frequency-offset/>
+                  </mid:prach-config-logic>
+                </mid:physical-resource-config>
+              </mid:scheduling-config>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info board-type | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:unit-type/>
+              <mid:board-type/>
+              <mid:user-label/>
+              <mid:latitude/>
+              <mid:longitude/>
+              <mid:height/>
+              <mid:radio-unit-port-id/>
+              <mid:radio-unit-serial-number/>
+              <mid:vswr-fail-alarm-threshold/>
+              <mid:operational-state/>
+              <mid:firmware-mode/>
+              <mid:number-of-carrier/>
+              <mid:cascade-optic-delay/>
+              <mid:dc-input-voltage/>
+              <mid:dc-input-current/>
+              <mid:energy-saving-pa-bias-voltage-mode/>
+              <mid:dynamic-power-amplifier-control-switch/>
+              <mid:antenna-line-device-power-feeding-switch/>
+              <mid:pim-detect-cancel-control-switch/>
+              <mid:pim-detect-cancel-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-switch/>
+              <mid:rx-vswr-fail-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-detect-period/>
+              <mid:first-sector-start-earfcn/>
+              <mid:second-sector-start-earfcn/>
+              <mid:flag-pa-backoff-2percent-evm/>
+              <mid:pa-backoff-2percent-evm/>
+              <mid:operational-mode/>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info first-sector-start-earfcn | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:unit-type/>
+              <mid:board-type/>
+              <mid:user-label/>
+              <mid:latitude/>
+              <mid:longitude/>
+              <mid:height/>
+              <mid:radio-unit-port-id/>
+              <mid:radio-unit-serial-number/>
+              <mid:vswr-fail-alarm-threshold/>
+              <mid:operational-state/>
+              <mid:firmware-mode/>
+              <mid:number-of-carrier/>
+              <mid:cascade-optic-delay/>
+              <mid:dc-input-voltage/>
+              <mid:dc-input-current/>
+              <mid:energy-saving-pa-bias-voltage-mode/>
+              <mid:dynamic-power-amplifier-control-switch/>
+              <mid:antenna-line-device-power-feeding-switch/>
+              <mid:pim-detect-cancel-control-switch/>
+              <mid:pim-detect-cancel-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-switch/>
+              <mid:rx-vswr-fail-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-detect-period/>
+              <mid:first-sector-start-earfcn/>
+              <mid:second-sector-start-earfcn/>
+              <mid:flag-pa-backoff-2percent-evm/>
+              <mid:pa-backoff-2percent-evm/>
+              <mid:operational-mode/>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info cbrs | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:cbrs>
+                <mid:fcc-id/>
+                <mid:call-sign/>
+                <mid:cbsd-category/>
+              </mid:cbrs>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function cbrs | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:cbrs>
+            <mid:cbrs-mode/>
+            <mid:measure-unit/>
+            <mid:user-id/>
+            <mid:max-heartbeat-interval/>
+            <mid:cbrs-dp-server/>
+            <mid:second-cbrs-dp-server/>
+          </mid:cbrs>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info radio-unit-serial-number | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:unit-type/>
+              <mid:board-type/>
+              <mid:user-label/>
+              <mid:latitude/>
+              <mid:longitude/>
+              <mid:height/>
+              <mid:radio-unit-port-id/>
+              <mid:radio-unit-serial-number/>
+              <mid:vswr-fail-alarm-threshold/>
+              <mid:operational-state/>
+              <mid:firmware-mode/>
+              <mid:number-of-carrier/>
+              <mid:cascade-optic-delay/>
+              <mid:dc-input-voltage/>
+              <mid:dc-input-current/>
+              <mid:energy-saving-pa-bias-voltage-mode/>
+              <mid:dynamic-power-amplifier-control-switch/>
+              <mid:antenna-line-device-power-feeding-switch/>
+              <mid:pim-detect-cancel-control-switch/>
+              <mid:pim-detect-cancel-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-switch/>
+              <mid:rx-vswr-fail-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-detect-period/>
+              <mid:first-sector-start-earfcn/>
+              <mid:second-sector-start-earfcn/>
+              <mid:flag-pa-backoff-2percent-evm/>
+              <mid:pa-backoff-2percent-evm/>
+              <mid:operational-mode/>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***exit
+
+show managed-element hardware-management radio-unit radio-unit-info external-port cpri-port | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:external-port>
+                <mid:cpri-port/>
+              </mid:external-port>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management radio-unit radio-unit-info carrier-control-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:carrier-control-info>
+                <mid:carrier-index/>
+                <mid:dl-max-tx-power/>
+                <mid:tx-attenuation/>
+                <mid:cell-number/>
+                <mid:rssi-high-alarm-threshold/>
+                <mid:rssi-low-alarm-threshold/>
+                <mid:digital-input-high-alarm-threshold/>
+                <mid:digital-input-low-alarm-threshold/>
+                <mid:nb-iot-cell-number/>
+                <mid:nb-iot-digital-input-low-alarm-threshold/>
+                <mid:cell-radio-unit-port-id/>
+                <mid:carrier-mapping-number/>
+                <mid:current-carrier-bandwidth/>
+                <mid:current-tx-earfcn/>
+                <mid:current-rx-earfcn/>
+                <mid:synchronization-advanced-value/>
+                <mid:fsu-synchronization-advanced-value/>
+                <mid:nb-iot-flag/>
+                <mid:tx-attenuation-per-carrier-per-path/>
+              </mid:carrier-control-info>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***configure
+
+show managed-element hardware-management radio-unit radio-unit-info vswr-fail-alarm-threshold | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:unit-type/>
+              <mid:board-type/>
+              <mid:user-label/>
+              <mid:latitude/>
+              <mid:longitude/>
+              <mid:height/>
+              <mid:radio-unit-port-id/>
+              <mid:radio-unit-serial-number/>
+              <mid:vswr-fail-alarm-threshold/>
+              <mid:operational-state/>
+              <mid:firmware-mode/>
+              <mid:number-of-carrier/>
+              <mid:cascade-optic-delay/>
+              <mid:dc-input-voltage/>
+              <mid:dc-input-current/>
+              <mid:energy-saving-pa-bias-voltage-mode/>
+              <mid:dynamic-power-amplifier-control-switch/>
+              <mid:antenna-line-device-power-feeding-switch/>
+              <mid:pim-detect-cancel-control-switch/>
+              <mid:pim-detect-cancel-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-switch/>
+              <mid:rx-vswr-fail-alarm-threshold/>
+              <mid:rx-vswr-fail-alarm-detect-period/>
+              <mid:first-sector-start-earfcn/>
+              <mid:second-sector-start-earfcn/>
+              <mid:flag-pa-backoff-2percent-evm/>
+              <mid:pa-backoff-2percent-evm/>
+              <mid:operational-mode/>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element common-management time-sync-service ntp-info | display xml:time-sync-service
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:common-management>
+          <mid:time-sync-service>
+            <mid:ntp-info>
+              <mid:server-type/>
+              <mid:server-ip-address/>
+            </mid:ntp-info>
+          </mid:time-sync-service>
+        </mid:common-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function call-trace csl-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:call-trace>
+            <mid:csl-info>
+              <mid:csl-ip-ver/>
+              <mid:csl-server-ipv4/>
+              <mid:csl-server-ipv6/>
+              <mid:csl-port-num/>
+              <mid:buffering-time/>
+              <mid:udp-ack-control/>
+              <mid:protocol-selection/>
+              <mid:csl-report-control/>
+              <mid:csl-encryption-mask-mode/>
+              <mid:second-csl-ip-ver/>
+              <mid:second-csl-server-ipv4/>
+              <mid:second-csl-server-ipv6/>
+              <mid:second-csl-port-num/>
+              <mid:second-buffering-time/>
+              <mid:second-udp-ack-control/>
+              <mid:second-protocol-selection/>
+              <mid:third-csl-ip-ver/>
+              <mid:third-csl-server-ipv4/>
+              <mid:third-csl-server-ipv6/>
+              <mid:third-csl-port-num/>
+              <mid:third-buffering-time/>
+              <mid:third-udp-ack-control/>
+              <mid:third-protocol-selection/>
+              <mid:fourth-csl-ip-ver/>
+              <mid:fourth-csl-server-ipv4/>
+              <mid:fourth-csl-server-ipv6/>
+              <mid:fourth-csl-port-num/>
+              <mid:fourth-buffering-time/>
+              <mid:fourth-udp-ack-control/>
+              <mid:fourth-protocol-selection/>
+            </mid:csl-info>
+          </mid:call-trace>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element common-management time-sync-service local-time-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:common-management>
+          <mid:time-sync-service>
+            <mid:local-time-info>
+              <mid:daylight-save-time-included/>
+              <mid:daylight-save-time/>
+              <mid:ltm-off-included/>
+              <mid:local-time-off/>
+              <mid:lp-sec-included/>
+              <mid:time-offset-included/>
+              <mid:summertime-autoset-status/>
+              <mid:start-month/>
+              <mid:start-week/>
+              <mid:start-day/>
+              <mid:start-hour/>
+              <mid:start-min/>
+              <mid:end-month/>
+              <mid:end-week/>
+              <mid:end-day/>
+              <mid:end-hour/>
+              <mid:end-min/>
+            </mid:local-time-info>
+          </mid:time-sync-service>
+        </mid:common-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element hardware-management digital-unit uda-port | display xml:rx-port
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:digital-unit>
+            <mid:uda-port>
+              <mid:rx-port>
+                <mid:uda-rx-port-id/>
+                <mid:detection-flag/>
+                <mid:alarm-name/>
+                <mid:severity/>
+              </mid:rx-port>
+            </mid:uda-port>
+          </mid:digital-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-access cell-select-info-logic | display xml:cell-num,cell-select-info-logic
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-cell-access>
+                <mid:cell-select-info-logic>
+                  <mid:q-rx-lev-min/>
+                  <mid:q-rx-lev-min-offset-usage/>
+                  <mid:q-rx-lev-min-offset/>
+                  <mid:p-max-usage/>
+                  <mid:p-max/>
+                  <mid:rel9-selection-info-usage/>
+                  <mid:q-qual-min/>
+                  <mid:q-qual-min-offset-usage/>
+                  <mid:q-qual-min-offset/>
+                  <mid:q-qual-min-wb-usage/>
+                  <mid:q-qual-min-wb/>
+                  <mid:q-rx-lev-min-ce-rel13/>
+                  <mid:q-qual-min-rsrq-ce-rel13/>
+                  <mid:q-qual-min-rsrq-ce-rel13-usage/>
+                </mid:cell-select-info-logic>
+              </mid:eutran-cell-access>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***exit
+
+show managed-element hardware-management radio-unit radio-unit-info antenna-unit antenna-line-device antenna-line-device-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:antenna-unit>
+                <mid:antenna-line-device>
+                  <mid:antenna-line-device-info>
+                    <mid:antenna-line-device-id/>
+                    <mid:vendor-code/>
+                    <mid:antenna-serial-number/>
+                    <mid:user-label/>
+                  </mid:antenna-line-device-info>
+                </mid:antenna-line-device>
+              </mid:antenna-unit>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***configure
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func earfcn-ul | display xml:cell-num,eutran-fa-information
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-frequency-relation>
+                <mid:eutran-fa-information>
+                  <mid:fa-index/>
+                  <mid:eutran-fa-prior-info-func>
+                    <mid:earfcn-ul/>
+                    <mid:earfcn-dl/>
+                    <mid:priority/>
+                    <mid:q-rx-lev-min/>
+                    <mid:p-max-usage/>
+                    <mid:p-max/>
+                    <mid:t-reselection/>
+                    <mid:sf-usage/>
+                    <mid:t-reselection-sf-medium/>
+                    <mid:t-reselection-sf-high/>
+                    <mid:s-intra-search-usage/>
+                    <mid:s-intra-search/>
+                    <mid:s-non-intra-search-usage/>
+                    <mid:s-non-intra-search/>
+                    <mid:thresh-serving-low/>
+                    <mid:threshx-high/>
+                    <mid:threshx-low/>
+                    <mid:measurement-bandwidth-usage/>
+                    <mid:measurement-bandwidth/>
+                    <mid:presence-ant-port1/>
+                    <mid:neighbor-cell-config/>
+                    <mid:q-offset-frequency/>
+                    <mid:offset-frequency/>
+                    <mid:s-intra-search-rel9-usage/>
+                    <mid:s-intra-search-p/>
+                    <mid:s-intra-search-q/>
+                    <mid:s-non-intra-search-rel9-usage/>
+                    <mid:s-non-intra-search-p/>
+                    <mid:s-non-intra-search-q/>
+                    <mid:q-qual-min-rel9-usage/>
+                    <mid:q-qual-min-rel9/>
+                    <mid:thresh-serving-low-q-rel9-usage/>
+                    <mid:thresh-serving-low-q-rel9/>
+                    <mid:threshx-high-q-rel9/>
+                    <mid:threshx-low-q-rel9/>
+                    <mid:preference0/>
+                    <mid:voice-support0/>
+                    <mid:plmn0-search-rate-for-idle-lb/>
+                    <mid:preference1/>
+                    <mid:voice-support1/>
+                    <mid:plmn1-search-rate-for-idle-lb/>
+                    <mid:preference2/>
+                    <mid:voice-support2/>
+                    <mid:plmn2-search-rate-for-idle-lb/>
+                    <mid:preference3/>
+                    <mid:voice-support3/>
+                    <mid:plmn3-search-rate-for-idle-lb/>
+                    <mid:preference4/>
+                    <mid:voice-support4/>
+                    <mid:plmn4-search-rate-for-idle-lb/>
+                    <mid:preference5/>
+                    <mid:voice-support5/>
+                    <mid:plmn5-search-rate-for-idle-lb/>
+                    <mid:anr-ue-search-rate/>
+                    <mid:handover-type/>
+                    <mid:measurement-cycle-scell/>
+                    <mid:anr-allow/>
+                    <mid:mobility-preference/>
+                    <mid:min-nrt-size-carrier/>
+                    <mid:measurement-object-priority/>
+                    <mid:cell-capacity-class-value-dl-per-fa/>
+                    <mid:cell-capacity-class-value-ul-per-fa/>
+                    <mid:plmn0-search-rate-for-idle-lb-ca/>
+                    <mid:plmn1-search-rate-for-idle-lb-ca/>
+                    <mid:plmn2-search-rate-for-idle-lb-ca/>
+                    <mid:plmn3-search-rate-for-idle-lb-ca/>
+                    <mid:plmn4-search-rate-for-idle-lb-ca/>
+                    <mid:plmn5-search-rate-for-idle-lb-ca/>
+                    <mid:q-qual-min-wb-usage/>
+                    <mid:q-qual-min-wb/>
+                    <mid:delta-rsrq-wb/>
+                    <mid:priority-for-es-cell-on-off/>
+                    <mid:target-frequency-handover-for-ca/>
+                    <mid:t312/>
+                    <mid:offload-dedicated-priority/>
+                    <mid:redistribution-factor/>
+                    <mid:ul-based-ho-event-type/>
+                    <mid:lb-delta-ni/>
+                    <mid:lb-mimo-layer/>
+                    <mid:lb-dl-256qam/>
+                    <mid:reduced-meas-performance/>
+                    <mid:ul-ca-scc-priority/>
+                    <mid:ul-ho-priority/>
+                    <mid:br-s-intra-search/>
+                    <mid:br-s-intra-search-p/>
+                    <mid:br-s-intra-search-q/>
+                    <mid:t-reselection-ce/>
+                    <mid:freq-bandindicator-priority/>
+                    <mid:plmn0-search-rate-foremtc-idle-lb/>
+                    <mid:plmn1-search-rate-foremtc-idle-lb/>
+                    <mid:plmn2-search-rate-foremtc-idle-lb/>
+                    <mid:plmn3-search-rate-foremtc-idle-lb/>
+                    <mid:plmn4-search-rate-foremtc-idle-lb/>
+                    <mid:plmn5-search-rate-foremtc-idle-lb/>
+                    <mid:target-frequency-ho-for-emtc/>
+                  </mid:eutran-fa-prior-info-func>
+                </mid:eutran-fa-information>
+              </mid:eutran-frequency-relation>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func earfcn-dl | display xml:cell-num,eutran-fa-information
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-frequency-relation>
+                <mid:eutran-fa-information>
+                  <mid:fa-index/>
+                  <mid:eutran-fa-prior-info-func>
+                    <mid:earfcn-ul/>
+                    <mid:earfcn-dl/>
+                    <mid:priority/>
+                    <mid:q-rx-lev-min/>
+                    <mid:p-max-usage/>
+                    <mid:p-max/>
+                    <mid:t-reselection/>
+                    <mid:sf-usage/>
+                    <mid:t-reselection-sf-medium/>
+                    <mid:t-reselection-sf-high/>
+                    <mid:s-intra-search-usage/>
+                    <mid:s-intra-search/>
+                    <mid:s-non-intra-search-usage/>
+                    <mid:s-non-intra-search/>
+                    <mid:thresh-serving-low/>
+                    <mid:threshx-high/>
+                    <mid:threshx-low/>
+                    <mid:measurement-bandwidth-usage/>
+                    <mid:measurement-bandwidth/>
+                    <mid:presence-ant-port1/>
+                    <mid:neighbor-cell-config/>
+                    <mid:q-offset-frequency/>
+                    <mid:offset-frequency/>
+                    <mid:s-intra-search-rel9-usage/>
+                    <mid:s-intra-search-p/>
+                    <mid:s-intra-search-q/>
+                    <mid:s-non-intra-search-rel9-usage/>
+                    <mid:s-non-intra-search-p/>
+                    <mid:s-non-intra-search-q/>
+                    <mid:q-qual-min-rel9-usage/>
+                    <mid:q-qual-min-rel9/>
+                    <mid:thresh-serving-low-q-rel9-usage/>
+                    <mid:thresh-serving-low-q-rel9/>
+                    <mid:threshx-high-q-rel9/>
+                    <mid:threshx-low-q-rel9/>
+                    <mid:preference0/>
+                    <mid:voice-support0/>
+                    <mid:plmn0-search-rate-for-idle-lb/>
+                    <mid:preference1/>
+                    <mid:voice-support1/>
+                    <mid:plmn1-search-rate-for-idle-lb/>
+                    <mid:preference2/>
+                    <mid:voice-support2/>
+                    <mid:plmn2-search-rate-for-idle-lb/>
+                    <mid:preference3/>
+                    <mid:voice-support3/>
+                    <mid:plmn3-search-rate-for-idle-lb/>
+                    <mid:preference4/>
+                    <mid:voice-support4/>
+                    <mid:plmn4-search-rate-for-idle-lb/>
+                    <mid:preference5/>
+                    <mid:voice-support5/>
+                    <mid:plmn5-search-rate-for-idle-lb/>
+                    <mid:anr-ue-search-rate/>
+                    <mid:handover-type/>
+                    <mid:measurement-cycle-scell/>
+                    <mid:anr-allow/>
+                    <mid:mobility-preference/>
+                    <mid:min-nrt-size-carrier/>
+                    <mid:measurement-object-priority/>
+                    <mid:cell-capacity-class-value-dl-per-fa/>
+                    <mid:cell-capacity-class-value-ul-per-fa/>
+                    <mid:plmn0-search-rate-for-idle-lb-ca/>
+                    <mid:plmn1-search-rate-for-idle-lb-ca/>
+                    <mid:plmn2-search-rate-for-idle-lb-ca/>
+                    <mid:plmn3-search-rate-for-idle-lb-ca/>
+                    <mid:plmn4-search-rate-for-idle-lb-ca/>
+                    <mid:plmn5-search-rate-for-idle-lb-ca/>
+                    <mid:q-qual-min-wb-usage/>
+                    <mid:q-qual-min-wb/>
+                    <mid:delta-rsrq-wb/>
+                    <mid:priority-for-es-cell-on-off/>
+                    <mid:target-frequency-handover-for-ca/>
+                    <mid:t312/>
+                    <mid:offload-dedicated-priority/>
+                    <mid:redistribution-factor/>
+                    <mid:ul-based-ho-event-type/>
+                    <mid:lb-delta-ni/>
+                    <mid:lb-mimo-layer/>
+                    <mid:lb-dl-256qam/>
+                    <mid:reduced-meas-performance/>
+                    <mid:ul-ca-scc-priority/>
+                    <mid:ul-ho-priority/>
+                    <mid:br-s-intra-search/>
+                    <mid:br-s-intra-search-p/>
+                    <mid:br-s-intra-search-q/>
+                    <mid:t-reselection-ce/>
+                    <mid:freq-bandindicator-priority/>
+                    <mid:plmn0-search-rate-foremtc-idle-lb/>
+                    <mid:plmn1-search-rate-foremtc-idle-lb/>
+                    <mid:plmn2-search-rate-foremtc-idle-lb/>
+                    <mid:plmn3-search-rate-foremtc-idle-lb/>
+                    <mid:plmn4-search-rate-foremtc-idle-lb/>
+                    <mid:plmn5-search-rate-foremtc-idle-lb/>
+                    <mid:target-frequency-ho-for-emtc/>
+                  </mid:eutran-fa-prior-info-func>
+                </mid:eutran-fa-information>
+              </mid:eutran-frequency-relation>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-frequency-relation eutran-fa-information eutran-fa-prior-info-func priority | display xml:cell-num,eutran-fa-information
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-frequency-relation>
+                <mid:eutran-fa-information>
+                  <mid:fa-index/>
+                  <mid:eutran-fa-prior-info-func>
+                    <mid:earfcn-ul/>
+                    <mid:earfcn-dl/>
+                    <mid:priority/>
+                    <mid:q-rx-lev-min/>
+                    <mid:p-max-usage/>
+                    <mid:p-max/>
+                    <mid:t-reselection/>
+                    <mid:sf-usage/>
+                    <mid:t-reselection-sf-medium/>
+                    <mid:t-reselection-sf-high/>
+                    <mid:s-intra-search-usage/>
+                    <mid:s-intra-search/>
+                    <mid:s-non-intra-search-usage/>
+                    <mid:s-non-intra-search/>
+                    <mid:thresh-serving-low/>
+                    <mid:threshx-high/>
+                    <mid:threshx-low/>
+                    <mid:measurement-bandwidth-usage/>
+                    <mid:measurement-bandwidth/>
+                    <mid:presence-ant-port1/>
+                    <mid:neighbor-cell-config/>
+                    <mid:q-offset-frequency/>
+                    <mid:offset-frequency/>
+                    <mid:s-intra-search-rel9-usage/>
+                    <mid:s-intra-search-p/>
+                    <mid:s-intra-search-q/>
+                    <mid:s-non-intra-search-rel9-usage/>
+                    <mid:s-non-intra-search-p/>
+                    <mid:s-non-intra-search-q/>
+                    <mid:q-qual-min-rel9-usage/>
+                    <mid:q-qual-min-rel9/>
+                    <mid:thresh-serving-low-q-rel9-usage/>
+                    <mid:thresh-serving-low-q-rel9/>
+                    <mid:threshx-high-q-rel9/>
+                    <mid:threshx-low-q-rel9/>
+                    <mid:preference0/>
+                    <mid:voice-support0/>
+                    <mid:plmn0-search-rate-for-idle-lb/>
+                    <mid:preference1/>
+                    <mid:voice-support1/>
+                    <mid:plmn1-search-rate-for-idle-lb/>
+                    <mid:preference2/>
+                    <mid:voice-support2/>
+                    <mid:plmn2-search-rate-for-idle-lb/>
+                    <mid:preference3/>
+                    <mid:voice-support3/>
+                    <mid:plmn3-search-rate-for-idle-lb/>
+                    <mid:preference4/>
+                    <mid:voice-support4/>
+                    <mid:plmn4-search-rate-for-idle-lb/>
+                    <mid:preference5/>
+                    <mid:voice-support5/>
+                    <mid:plmn5-search-rate-for-idle-lb/>
+                    <mid:anr-ue-search-rate/>
+                    <mid:handover-type/>
+                    <mid:measurement-cycle-scell/>
+                    <mid:anr-allow/>
+                    <mid:mobility-preference/>
+                    <mid:min-nrt-size-carrier/>
+                    <mid:measurement-object-priority/>
+                    <mid:cell-capacity-class-value-dl-per-fa/>
+                    <mid:cell-capacity-class-value-ul-per-fa/>
+                    <mid:plmn0-search-rate-for-idle-lb-ca/>
+                    <mid:plmn1-search-rate-for-idle-lb-ca/>
+                    <mid:plmn2-search-rate-for-idle-lb-ca/>
+                    <mid:plmn3-search-rate-for-idle-lb-ca/>
+                    <mid:plmn4-search-rate-for-idle-lb-ca/>
+                    <mid:plmn5-search-rate-for-idle-lb-ca/>
+                    <mid:q-qual-min-wb-usage/>
+                    <mid:q-qual-min-wb/>
+                    <mid:delta-rsrq-wb/>
+                    <mid:priority-for-es-cell-on-off/>
+                    <mid:target-frequency-handover-for-ca/>
+                    <mid:t312/>
+                    <mid:offload-dedicated-priority/>
+                    <mid:redistribution-factor/>
+                    <mid:ul-based-ho-event-type/>
+                    <mid:lb-delta-ni/>
+                    <mid:lb-mimo-layer/>
+                    <mid:lb-dl-256qam/>
+                    <mid:reduced-meas-performance/>
+                    <mid:ul-ca-scc-priority/>
+                    <mid:ul-ho-priority/>
+                    <mid:br-s-intra-search/>
+                    <mid:br-s-intra-search-p/>
+                    <mid:br-s-intra-search-q/>
+                    <mid:t-reselection-ce/>
+                    <mid:freq-bandindicator-priority/>
+                    <mid:plmn0-search-rate-foremtc-idle-lb/>
+                    <mid:plmn1-search-rate-foremtc-idle-lb/>
+                    <mid:plmn2-search-rate-foremtc-idle-lb/>
+                    <mid:plmn3-search-rate-foremtc-idle-lb/>
+                    <mid:plmn4-search-rate-foremtc-idle-lb/>
+                    <mid:plmn5-search-rate-foremtc-idle-lb/>
+                    <mid:target-frequency-ho-for-emtc/>
+                  </mid:eutran-fa-prior-info-func>
+                </mid:eutran-fa-information>
+              </mid:eutran-frequency-relation>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-plmn-info | display xml:cell-num,cell-plmn-info
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cell-plmn-info>
+                <mid:plmn-index/>
+                <mid:plmn-usage/>
+                <mid:user-plane-optimization-emtc-enable/>
+                <mid:control-plane-optimization-emtc-enable/>
+                <mid:attach-without-pdn-connectivity/>
+                <mid:upper-layer-indication/>
+              </mid:cell-plmn-info>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function enb-information enb-plmn-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:enb-information>
+            <mid:enb-plmn-info>
+              <mid:plmn-index/>
+              <mid:op-id/>
+              <mid:mcc/>
+              <mid:mnc/>
+            </mid:enb-plmn-info>
+          </mid:enb-information>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function carrier-aggregation ca-band-combination-info | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:carrier-aggregation>
+            <mid:ca-band-combination-info>
+              <mid:band-combination-list-index/>
+              <mid:band0-for-dl-usage/>
+              <mid:band-indicator0/>
+              <mid:ca-bandwidth-class-dl0/>
+              <mid:band1-for-dl-usage/>
+              <mid:band-indicator1/>
+              <mid:ca-bandwidth-class-dl1/>
+              <mid:band2-for-dl-usage/>
+              <mid:band-indicator2/>
+              <mid:ca-bandwidth-class-dl2/>
+              <mid:band3-for-dl-usage/>
+              <mid:band-indicator3/>
+              <mid:ca-bandwidth-class-dl3/>
+              <mid:band4-for-dl-usage/>
+              <mid:band-indicator4/>
+              <mid:ca-bandwidth-class-dl4/>
+              <mid:band5-for-dl-usage/>
+              <mid:band-indicator5/>
+              <mid:ca-bandwidth-class-dl5/>
+              <mid:band6-for-dl-usage/>
+              <mid:band-indicator6/>
+              <mid:ca-bandwidth-class-dl6/>
+              <mid:band0-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul0/>
+              <mid:band1-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul1/>
+              <mid:band2-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul2/>
+              <mid:band3-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul3/>
+              <mid:band4-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul4/>
+              <mid:band5-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul5/>
+              <mid:band6-for-ul-usage/>
+              <mid:ca-bandwidth-class-ul6/>
+            </mid:ca-band-combination-info>
+          </mid:carrier-aggregation>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-carrier-aggregation ca-cell-info | display xml:cell-num,ca-cell-info
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cell-carrier-aggregation>
+                <mid:ca-cell-info>
+                  <mid:ca-available-type/>
+                  <mid:p-cell-only-flag/>
+                  <mid:max-dl-ca-cc-num/>
+                  <mid:max-ul-ca-cc-num/>
+                  <mid:ca-operation-mode/>
+                  <mid:smart-ca-flag/>
+                  <mid:pfs-flag/>
+                  <mid:a6-offset-delta/>
+                  <mid:inter-freq-ho-for-ca/>
+                  <mid:data-traffic-threshold/>
+                  <mid:control-factor-for-4layer-mimo/>
+                  <mid:control-factor-for-256qam/>
+                  <mid:if-ho-for-ca-option/>
+                  <mid:ul-scell-carrier-change-usage/>
+                  <mid:offset-for-scell-carrier-change/>
+                  <mid:ul-scell-deconfig-usage/>
+                  <mid:scell-conf-volte/>
+                  <mid:laa-ca-usage/>
+                  <mid:max-laa-carrier-num/>
+                  <mid:control-factor-for-laa/>
+                </mid:ca-cell-info>
+              </mid:cell-carrier-aggregation>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-carrier-aggregation ca-colocated-cell | display xml:cell-num,ca-colocated-cell
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cell-carrier-aggregation>
+                <mid:ca-colocated-cell>
+                  <mid:colocated-cell-index/>
+                  <mid:status/>
+                  <mid:i-node-id/>
+                  <mid:colocated-cell-num/>
+                  <mid:colocated-cell-type/>
+                  <mid:dedicated-pucch-resource-not-use/>
+                </mid:ca-colocated-cell>
+              </mid:cell-carrier-aggregation>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function son load-balancing active-mode-load-balancing-conf | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:son>
+            <mid:load-balancing>
+              <mid:active-mode-load-balancing-conf>
+                <mid:time-load-decision-lb/>
+                <mid:time-resource-status-reporting/>
+                <mid:time-measurement-collection-load-balancing/>
+                <mid:lb-triggering-duration/>
+                <mid:blind-lte-load-balancing-wait-time/>
+                <mid:number-of-neighbor-for-active-load-balancing/>
+                <mid:moving-average-weight-cellload/>
+                <mid:cpu-threshold/>
+                <mid:min-backhaul-capacity/>
+                <mid:hw-load-low-threshold/>
+                <mid:hw-load-medium-threshold/>
+                <mid:hw-load-high-threshold/>
+                <mid:s1-tnl-load-low-threshold/>
+                <mid:s1-tnl-load-medium-threshold/>
+                <mid:s1-tnl-load-high-threshold/>
+                <mid:load-evaluate-mode/>
+                <mid:ca-ue-candidate-enable/>
+                <mid:rsu-fail-count/>
+                <mid:cell-capacity-class-value-use-mode/>
+                <mid:cac-ul-use-enable/>
+                <mid:prb-iir-coef/>
+                <mid:req-to-samsung-only-ultacs/>
+                <mid:rs-sinr-mr-option/>
+                <mid:auto-delta-ni-update/>
+                <mid:endc-ue-candidate-enable/>
+                <mid:req-to-samsung-only-lb-endc/>
+              </mid:active-mode-load-balancing-conf>
+            </mid:load-balancing>
+          </mid:son>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-info ims-emergency-support | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-cell-info>
+                <mid:cell-size/>
+                <mid:hnb-name/>
+                <mid:additional-spectrum-emission/>
+                <mid:ims-emergency-support/>
+                <mid:barring-state/>
+                <mid:category-0-allowed/>
+                <mid:tracking-area-code/>
+                <mid:cell-dl-total-power/>
+                <mid:plmn-info-list-r15-usage/>
+              </mid:eutran-cell-info>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd cell-son cell-load-balancing traffic-manage-func-cell-control | display xml:cell-num,traffic-manage-func-cell-control
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:cell-son>
+                <mid:cell-load-balancing>
+                  <mid:traffic-manage-func-cell-control>
+                    <mid:load-equalization-enable/>
+                    <mid:intra-group-offloading-enable/>
+                    <mid:inter-group-offloading-enable/>
+                    <mid:offload-to-hrpd-enable/>
+                    <mid:idle-mode-load-balancing-enable/>
+                    <mid:idle-ca-usage/>
+                    <mid:plmn-option-for-idle-load-balancing/>
+                    <mid:redistribution-mode/>
+                    <mid:ul-sinr-measure-load-balancing-option/>
+                    <mid:ca-option-for-load-balancing/>
+                    <mid:emtc-idle-mode-load-balancing-enable/>
+                    <mid:plmn-option-for-emtc-idle-load-balancing/>
+                    <mid:idle-mode-endc-support-enable/>
+                    <mid:plmn-option-for-idle-endc-support/>
+                    <mid:anchor-selection-enable/>
+                  </mid:traffic-manage-func-cell-control>
+                </mid:cell-load-balancing>
+              </mid:cell-son>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd eutran-cell-info cell-dl-total-power | display xml:cell-num,eutran-cell-info
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:eutran-cell-info>
+                <mid:cell-size/>
+                <mid:hnb-name/>
+                <mid:additional-spectrum-emission/>
+                <mid:ims-emergency-support/>
+                <mid:barring-state/>
+                <mid:category-0-allowed/>
+                <mid:tracking-area-code/>
+                <mid:cell-dl-total-power/>
+                <mid:plmn-info-list-r15-usage/>
+              </mid:eutran-cell-info>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd scheduling-config uplink-scheduling-config ul-power-control-param-logic | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:scheduling-config>
+                <mid:uplink-scheduling-config>
+                  <mid:ul-power-control-param-logic>
+                    <mid:p0-nominal-pucch/>
+                    <mid:alpha/>
+                    <mid:p0-nominal-pusch/>
+                    <mid:deltaf-pucch-format1/>
+                    <mid:deltaf-pucch-format1b/>
+                    <mid:deltaf-pucch-format2/>
+                    <mid:deltaf-pucch-format2a/>
+                    <mid:deltaf-preamble-msg3/>
+                    <mid:deltaf-pucch-format2b/>
+                    <mid:deltaf-pucch-format3/>
+                    <mid:deltaf-pucch-format1bcs/>
+                    <mid:iot-reduction-sinr-margin/>
+                    <mid:residual-error-tpc-up-cmd/>
+                    <mid:phr-added-power-budget/>
+                    <mid:aerial-pc-enable/>
+                  </mid:ul-power-control-param-logic>
+                </mid:uplink-scheduling-config>
+              </mid:scheduling-config>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd dsp-logical-cell-number | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+show managed-element enb-function eutran-generic-cell eutran-cell-fdd-tdd channel-card-id | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:enb-function>
+          <mid:eutran-generic-cell>
+            <mid:eutran-cell-fdd-tdd>
+              <mid:cell-num/>
+              <mid:internal-cell-num/>
+              <mid:administrative-state/>
+              <mid:battery-saving-option/>
+              <mid:channel-card-id/>
+              <mid:cell-band-carrier/>
+              <mid:user-label/>
+              <mid:test-flag/>
+              <mid:cbrs-op-state/>
+              <mid:cell-tx-path-type/>
+              <mid:crsic-support-cell-conf/>
+              <mid:dsp-id/>
+              <mid:dsp-logical-cell-number/>
+              <mid:emtc-edrx-switch/>
+              <mid:lte-edrx-switch/>
+              <mid:measurement-quantity-cdma2000/>
+              <mid:multi-carrier-type/>
+              <mid:traffic-control-prb-threshold/>
+              <mid:virtual-rf-port-mapping-switch/>
+              <mid:auto-unlock-flag/>
+              <mid:operational-state/>
+              <mid:usage-state/>
+              <mid:resource-state/>
+              <mid:cell-setup-state/>
+              <mid:s1-ap-state/>
+            </mid:eutran-cell-fdd-tdd>
+          </mid:eutran-generic-cell>
+        </mid:enb-function>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***exit
+
+show managed-element hardware-management radio-unit radio-unit-info path-control | display xml
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:hardware-management>
+          <mid:radio-unit>
+            <mid:radio-unit-info>
+              <mid:connected-digital-unit-board-type/>
+              <mid:connected-digital-unit-board-id/>
+              <mid:connected-digital-unit-port-id/>
+              <mid:cascade-radio-unit-id/>
+              <mid:path-control>
+                <mid:path/>
+                <mid:path-switch/>
+                <mid:rx-attenuation/>
+                <mid:operational-state/>
+                <mid:current-amp-state/>
+                <mid:temperature/>
+                <mid:tx-rf-power/>
+                <mid:return-loss/>
+                <mid:vswr/>
+                <mid:current-ald-power-feeding-switch/>
+                <mid:pim-power/>
+                <mid:pim-cancellation-level/>
+                <mid:pim-frequency-type/>
+                <mid:pim-frequency/>
+                <mid:path-energy-saving-state/>
+              </mid:path-control>
+            </mid:radio-unit-info>
+          </mid:radio-unit>
+        </mid:hardware-management>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***configure
+
+show managed-element ip-system access-control-list acl-rule-config | display xml:access-control-list
+
+<nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <nc:get>
+    <nc:filter nc:type="subtree">
+      <mid:managed-element xmlns:mid="http://www.samsung.com/global/business/4GvRAN/ns/macro_indoor_dist">
+        <mid:ip-system>
+          <mid:access-control-list>
+            <mid:acl-rule-config>
+              <mid:acl-name/>
+              <mid:sequence-id/>
+              <mid:action/>
+              <mid:protocol/>
+              <mid:protocol-num/>
+              <mid:ip-version/>
+              <mid:source-ipv4-prefix/>
+              <mid:destination-ipv4-prefix/>
+              <mid:source-ipv6-prefix/>
+              <mid:destination-ipv6-prefix/>
+              <mid:source-port/>
+              <mid:destination-port/>
+              <mid:dscp-switch/>
+              <mid:dscp/>
+            </mid:acl-rule-config>
+          </mid:access-control-list>
+        </mid:ip-system>
+      </mid:managed-element>
+    </nc:filter>
+  </nc:get>
+</nc:rpc>
+
+***exit
+
